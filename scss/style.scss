@@ -1,0 +1,340 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header{
+    &__inner{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+        align-items: center;
+        border-radius: 50px;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+    &__logo{
+        font-weight: bold;
+        font-size: 32px;
+        font-weight: bald;
+    }
+    &__profile{
+        &-wrapper{
+            width: 48px;
+            height: 48px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .navbar{
+        &__list{
+            display: flex;
+        }
+        &__item{
+            margin: 0 15px;
+        }
+        &__link{
+             color: #000;
+             font-size: 20px;
+        }
+    }
+}
+.register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0px 0;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.25), 10px 10px 10px -2px rgba(224, 231, 236, 0.6) inset;
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__form{
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            width: 500px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #dedede;
+            margin-bottom: 10px;
+        }
+        &-buttons{
+            width: 500px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            padding: 15px 30px;
+            background-color: #29c144;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+            &.reset{
+                background-color: #e60a0a;
+            }
+        }
+    }
+    &__message{
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0px 0;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.25), 10px 10px 10px -2px rgba(224, 231, 236, 0.6) inset;
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__form{
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            width: 500px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #dedede;
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 15px 30px;
+            background-color: #29c144;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+        }
+    }
+    &__message{
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+}
+.petition{
+    &__inner{
+        position: relative;
+        margin: 50px auto 0;
+        width: 900px;
+        border-radius: 30px;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        padding: 15px 30px;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    &__content{
+        display: flex;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 420px;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &-wrapper{
+            min-width: 400px;
+            min-height: 400px;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+    }
+    &__description{
+        overflow: scroll;
+        overflow-x: hidden;
+        padding-right: 5px;
+    }
+    &__info{
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        &-author{
+            font-size: 18px;
+            font-weight: bold;
+            color: #e60a0a;
+        }
+        &-category{
+            margin: 0 20px;
+            padding: 10px 20px;
+            border: 1px solid #29c144;
+            color: #29c144;
+            border-radius: 20px;
+        }
+        .date{
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ccc;
+            display: inline-block;
+            position: absolute;
+            right: 45px;
+            top: -33px;
+            font-size: 20px;
+            padding: 5px 15px;
+            border-radius: 20px 20px 0 0;
+        }
+        .votes{
+            margin-left: 30px;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            background-color: #000;
+            color: #fff;
+            bottom: -38px;
+            display: block;
+            padding: 10px 30px;
+            border-radius: 0 0 20px 20px;
+            transform: translateX(-60%);
+        }
+        
+    }
+    button{
+        background-color: #29c144;
+        padding: 5px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 15px;
+        margin-left: auto;
+        box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    }
+}
+.create-petition{
+    &__inner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+    }
+    &__item{
+        width: 900px;
+        border-radius: 30px;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        padding: 15px 45px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    &__form{
+        .row{
+        display: flex;
+        justify-content: space-between;
+        }
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            span{
+                font-size: 20px;
+            }
+            label{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            input, textarea, label{
+                padding: 15px 30px;
+                background: #dedede;
+                margin-bottom: 10px;
+                border-radius: 30px;
+                &::placeholder{
+                    font-size: 20px;
+                    color: #000;
+                }
+            }
+            textarea{
+                height: 250px;
+                overflow-y: scroll;
+                scroll-margin: 10px;
+            }
+            
+        }
+        .buttons{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            button{
+                margin-top: 20px;
+                padding: 15px 30px;
+                background-color: #29c144;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 30px;
+                margin-bottom: 20px;
+                box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.3);
+                &.reset{
+                    background-color: #e60a0a;
+                }
+            }
+        }
+    }
+}
+.petition_list{
+    &__inner{
+        display: flex;
+        align-items: center;
+        width: 1020px;
+        padding: 40px;
+    }
+    &__item{
+
+
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalogi Online</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main class="register">
+        <div class="register__inner">
+            <h1 class="register__title">Регистрация</h1>
+            <form action="/" method="post" class="register__form">
+                <input placeholder="Имя" type="text" name="name" id="name" class="register__form-input">
+                <input placeholder="Фамилия" type="text" name="surname" id="surname" class="register__form-input">
+                <input placeholder="Имя пользователя" type="text" name="nickname" id="nickname" class="register__form-input">
+                <input type="email" placeholder="Электронная почта" name="email" id="email" class="register__form-input">
+                <input placeholder="Пароль" type="password" name="password" id="password" class="register__form-input">
+                <input placeholder="Потвердите ароль" type="password" name="confirm-password" id="confirm-password" class="register__form-input">
+                <div class="register__form-buttons">
+                    <button  class="register__form-btn reset" type="reset">Сбросить</button>
+                    <button class="register__form-btn submit"  type="submit">Отправить</button>
+                </div>
+            </form>
+            <p class="register__message">
+                У вас уже есть аккаунт? <a href="./login.html" class="register__login-link">Войти в систему</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

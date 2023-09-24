@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>  
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="header__logo logo">Nalogi Online</a>
+                <nav class="header__navbar navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Мои петиции</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Посмотреть петиции</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Создать петицию</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__profile">
+                    <div class="header__profile-wrapper">
+                        <img src="../img/profile-user.png" alt="profile img" class="header__profile-img">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="create-petition">
+        <div class="container">
+            <div class="create-petition__inner">
+                <div class="create-petition__item">
+                    <h1 class="create-petition__title">Create Petition</h1>
+                    <form action="/" method="post" class="create-petition__form">
+                        <div class="row">
+                            <div class="inputs">
+                                <input type="text" placeholder="Название" name="titleOfPetition" id="titleOfPetition">
+                                <input placeholder="Количество нужных петиций" type="number" name="amountOfPetitions" id="amountOfPetitions">
+                                <input placeholder="Ссылка для картинки" type="url" name="imageUrl" id="imageUrl">
+                                <label >
+                                    <span>Категория: </span>
+                                    <select  name="Категория" id="category">
+                                        <option value="Технологии">Технологии</option>
+                                        <option value="Искусство">Искусство</option>
+                                        <option value="Общество">Общество</option>
+                                        <option value="Политика">Политика</option>
+                                        <option value="Технологии">Технологии</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="inputs">
+                                <textarea placeholder="Текст для петиции" name="text" id="text"></textarea>
+                            </div>
+
+                        </div>
+                            <div class="buttons">
+                                <button class="reset" type="reset">Сбросить</button>
+                                <button class="submit" type="reset">Отправить</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
